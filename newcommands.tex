@@ -1,0 +1,17 @@
+% Text emphasis
+\newcommand{\emphasis}[1]{
+    \centering
+    \Large
+    \textbf{#1}
+}
+
+% \pause + \item
+\newcommand{\pitem}{\pause\item}
+
+% Table of content highlight before a section
+\newcommand{\outline}{
+    \begin{frame}
+    \frametitle{Outline}
+    \tableofcontents[currentsection]
+    \end{frame}
+}

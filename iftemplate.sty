@@ -1,0 +1,43 @@
+% --------------------------------------------------------------------------
+% Author: Filipe Fernandes, PhD - filipe.fernandes@ifsudestemg.edu.br
+% --------------------------------------------------------------------------
+
+\definecolor{IFgreen}{RGB}{42,156,65} % IF Green (primary)
+\definecolor{IFdarkgreen}{RGB}{43, 89, 63} % IF Green (primary)
+\definecolor{IFgray}{RGB}{80,80,80}
+
+\usetheme{Madrid}
+\usecolortheme[named=IFgreen]{structure}
+
+% New commands specific for subject information ---------------
+
+\newcommand{\ifsubject}[2]{
+    \title[#1]
+    {#2}
+}
+
+\newcommand{\ifsubjectid}[1]{
+    \subtitle{#1}
+}
+
+\newcommand{\professorname}[1]{
+    \author
+    {\textbf{#1}}
+}
+
+\newcommand{\contact}[2]{
+    \institute[#1]
+    {
+      #1 \\
+      \textit{#2}
+    }
+}
+
+\newcommand{\course}[3]{
+    \date[#1 #3]
+    {#2, #3}
+}
+
+% ------------------------------------------------------------------
+
+\logo{\includegraphics[height=1cm]{Figures/IFSudesteMG-logo.png}}

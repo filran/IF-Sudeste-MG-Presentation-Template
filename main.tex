@@ -1,0 +1,45 @@
+% ---------------------------------------------------
+% IF Sudeste MG Presentation Template
+% Developed by Filipe Fernandes, PhD - filipe.fernandes@ifsudestemg.edu.br
+% Access the README.MD to more instructions
+% ---------------------------------------------------
+
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{iftemplate}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}
+
+\input{subject_information}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+% Abbreviations
+\input{abbreviations}
+
+% New Commands
+\input{newcommands}
+
+\begin{document}
+
+\input{titlepage}
+
+% CONTENT ------------------------------------------------
+\input{Content/frame1}
+% END CONTENT ------------------------------------------------
+
+\begin{frame}[allowframebreaks]
+    \footnotesize
+    \frametitle{Referências}
+    % \nocite{*} %lista todos os itens do arquivo de bibliografia, mesmo os não citados
+    \bibliographystyle{apalike}
+    \bibliography{references.bib}
+\end{frame}
+
+\end{document}
