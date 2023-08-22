@@ -15,3 +15,25 @@
     \tableofcontents[currentsection]
     \end{frame}
 }
+
+% Subsection overwrite
+% oldsubsection
+\let\oldsubsection\subsection
+% overwriting \subsection
+\renewcommand{\subsection}[1]{
+    \oldsubsection{#1} % Original \subsection
+    \begin{frame}
+        \emphasis{#1}
+    \end{frame}
+}
+
+% Subsubsection overwrite
+% oldsubsubsection
+\let\oldsubsubsection\subsubsection
+% overwriting \subsubsection
+\renewcommand{\subsubsection}[1]{
+    \oldsubsubsection{#1} % Original \subsubsection
+    \begin{frame}
+        \emphasis{#1}
+    \end{frame}
+}

@@ -16,6 +16,8 @@
     
     
     %---------------------------------------------------------
+    \subsection{First Subsection}
+    \subsubsection{First Subsubsection}
     %Example of the \pause command
     \begin{frame}
     In this slide \pause
@@ -73,4 +75,17 @@
     layout in some cases.
     \end{columns}
     \end{frame}
-%---------------------------------------------------------
+    %---------------------------------------------------------
+
+    %---------------------------------------------------------
+    % Code
+    \begin{frame}[fragile]{Code Example}
+        \begin{minted}{java}
+            public class Person(){
+                private String name;
+                public void setName(String name){
+                    this.name = name;
+                }
+            }
+        \end{minted}
+    \end{frame}
